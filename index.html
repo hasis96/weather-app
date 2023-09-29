@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/dist/main.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css"/>
+    <title>weather_app</title>
+</head>
+<body>
+    <div id="weatherAppContainer">
+        <div id="header">
+            <div id="headerLocation">norwalk</div>
+            <form id="form" action="">
+                <input type="text" id="userLocation" placeholder="enter location"/>
+                <input type="button" id="searchButton" placeholder="search"/>
+                <!-- <input type="button" id="convertButton" class="farenheit" src="icons/cog.svg"> -->
+                <button type="button" id="convertButton" class="farenheit">
+                    <img src="/icons/cog.svg">
+                </button>
+            </form>
+        </div>
+        <div id="weatherForecast">
+            <div id="weather" class="today">
+                <div id="weatherHeader" class="today">
+                    <div id="currentTemp" class="today"></div>
+                    <div id="condition" class="today"></div>
+                    <div id="highLow" class="today">
+                        <div id="lowTemp" class="today"></div>
+                        <div id="highTemp" class="today"></div>
+                    </div>
+                </div>
+                <div id="weatherDetails">
+                    <div id="feelsLike" class="today"></div>
+                    <div id="humidity" class="today"></div>
+                    <div id="precip" class="today"></div>
+                    <div id="wind" class="today"></div>
+                </div>
+            </div>
+
+            <div id="weather" class="tomorrow">
+                <div id="weatherHeader" class="tomorrow">
+                    <div id="avgTemp" class="tomorrow"></div>
+                    <div id="condition" class="tomorrow"></div>
+                    <div id="highLow" class="tomorrow">
+                        <div id="lowTemp" class="tomorrow"></div>
+                        <div id="highTemp" class="tomorrow"></div>
+                    </div>
+                </div>
+                <div id="weatherDetails">
+                    <div id="humidity" class="tomorrow"></div>
+                    <div id="precip" class="tomorrow"></div>
+                    <div id="wind" class="tomorrow"></div>
+                </div>
+            </div>
+
+            <div id="weather" class="nextDay">
+                <div id="weatherHeader" class="nextDay">
+                    <div id="avgTemp" class="nextDay"></div>
+                    <div id="condition" class="nextDay"></div>
+                    <div id="highLow" class="nextDay">
+                        <div id="lowTemp" class="nextDay"></div>
+                        <div id="highTemp" class="nextDay"></div>
+                    </div>
+                </div>
+                <div id="weatherDetails">
+                    <div id="humidity" class="nextDay"></div>
+                    <div id="precip" class="nextDay"></div>
+                    <div id="wind" class="nextDay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
