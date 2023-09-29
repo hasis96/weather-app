@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weatherAppContainer {
+    display: grid;
+    width: 1000px;
+    grid-template-rows: 70px 400px;
+    border-radius: 10px;
+    border: solid 1px;
+    background-color: lightsteelblue;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin: 0 20px 0 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+input#userLocation {
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+#convertButton {
+    background-image: url(/icons/cog.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#searchButton {
+    background-image: url(/icons/magnify.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#searchButton,
+#convertButton {
+    width: 18px;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: lightgray;
+}
+
+#weatherForecast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#weather {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 10px;
+}
+
+#weatherHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#currentTemp,
+#avgTemp {
+    font-size:50px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#condition {
+
+}
+
+#highLow {
+    display: flex;
+    flex-direction: row;
+}
+
+#weatherDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
